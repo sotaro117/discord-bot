@@ -7,3 +7,8 @@ torchvision
 torchaudio
 transformers
 accelerate
+langchain
+langgraph
+tavily-python
+langchain_community
+langchain_huggingface

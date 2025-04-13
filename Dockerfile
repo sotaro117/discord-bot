@@ -24,5 +24,6 @@ COPY .env .
 # ENV PATH="${VENV_PATH}/bin:$PATH"
 
 # Run the app
+COPY chat.py .
 COPY bot.py .
 CMD [ "python", "./bot.py" ]

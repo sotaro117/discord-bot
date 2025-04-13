@@ -4,7 +4,7 @@ import discord
 from dotenv import load_dotenv
 import os
 import logging
-from hf import chat_completion
+from chat import chat_res
 
 load_dotenv()
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
@@ -31,7 +31,7 @@ async def on_message(message):
         return
     else:
         # response = chat_completion(message.content)
-        response = chat_completion(message.content)
+        response = chat_res(message.content)
         await message.channel.send(response)
 
 
